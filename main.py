@@ -37,7 +37,7 @@ class Snake(Canvas):
             self.create_image(x_position, y_position, image=self.snake_body, tag="snake")
 
         self.create_image(*self.food_position, image=self.food, tag="food")
-
+        self.create_rectangle(7, 27, 593, 613, outline="#525d69")
 
 
 root = Tk()
