@@ -30,6 +30,9 @@ class Snake(Canvas):
 
     # Displaying food and snake
     def create_objects(self):
+        self.create_text(
+            45, 12, text=f"Score: {self.score}", tag="score", fill="#fff", font=("TkDefaultFont", 14)
+        )
         for x_position, y_position in self.snake_position:
             self.create_image(x_position, y_position, image=self.snake_body, tag="snake")
 
